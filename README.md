@@ -5,3 +5,11 @@
 [Keras](https://keras.io/) "is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano". When using the TensorFlow backend, they typically support the [TensorBoard callback](https://keras.io/callbacks/#tensorboard), to take advantage for its vizualiations.
 
 Keras' TensorBoard callback, however, still do not support the plugins. I recently wanted to use the [Precision-Recal curve](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html) [plugin](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/plugins/pr_curve/summary.py) (pr_curve) to see how my binary classification problem was doing. I ended up writing an extension of the callback supporting it. Although it is only a partial support (lacks usage of weights, for example), hopefully this will help anyone else in need of similar code, since I found very little material about it around the web.
+
+### Run the Example:
+Assuming you have all the dependecies installed, run:
+
+	python3 example.py
+	tensorboard --logdir=./logs
+
+The script will download a small dataset to run the example on real data. The data is from [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php), specifically the [Breast Cancer Wisconsin (Diagnostic) Data Set](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29).
