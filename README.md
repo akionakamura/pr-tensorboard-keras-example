@@ -1,5 +1,7 @@
 ## Precision-Recall curve with Keras
 
+A blog post describing the work here can be found on my [Medium profile](https://medium.com/@akionakas/precision-recall-curve-with-keras-cd92647685e1).
+
 [TensorBoard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) is a suite of visualizations for inspecting and understanding your TensorFlow models and runs. They recently [released](https://research.googleblog.com/2017/09/build-your-own-machine-learning.html) of a "consistent set of APIs that allows developers to add custom visualization plugins to TensorBoard". There are already [several plugins](https://github.com/tensorflow/tensorboard/tree/master/tensorboard/plugins) available.
 
 [Keras](https://keras.io/) "is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano". When using the TensorFlow backend, they typically support the [TensorBoard callback](https://keras.io/callbacks/#tensorboard), to take advantage for its visualizations.
