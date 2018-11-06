@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+verify_ssl = true
+url = "https://pypi.python.org/simple"
+
+[requires]
+python_version = "3.5"
+
+[dev-packages]
+
+[packages]
+tensorflow = "==1.11.0"
+keras = "==2.2.4"
+tensorboard = "==1.11.0"
+scikit-learn = "==0.19.1"
+pandas = "==0.23.4"
